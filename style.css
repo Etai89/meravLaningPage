@@ -1,0 +1,204 @@
+body {
+    font-family: 'Arimo  ', sans-serif;
+}
+
+#main {
+    /* border: 1px solid black; */
+    /* height: 200px; */
+    padding: 10px;
+    /* background-color: bisque; */
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+}
+.menuItems {
+
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.menuItems:hover {
+    color: rgb(240, 172, 172); /* Change text color on hover */
+    text-shadow: 0px 4px 20px rgba(22, 20, 20, 0.4);
+
+}
+#main #logo {
+    /* border: 1px solid black; */
+    width: 300px;
+    height: 300px;
+    background-image: url(pics/logo/לוגו\ מפורק\ עם\ תוספת\ טקסט.png);
+    background-size: 100%;
+
+}
+
+#main #details {
+    /* border: 1px solid black; */
+    height: 50px;
+    /* background-color: lightgreen; */
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 4px 20px rgba(22, 20, 20, 0.4);
+
+}
+
+#middle {
+    /* border: 1px solid black; */
+    padding: 10px;
+    /* background-color: gray; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#middle #contact {
+    width: 300px;
+    /* border: 1px solid black; */
+    background-color: rgb(223, 219, 219);
+    box-shadow: 0px 4px 20px rgba(22, 20, 20, 0.4);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 5px;
+
+}
+
+#middle #contact .inputs {
+    text-align: center;
+    width: 250px;
+    padding: 5px;
+    border-radius: 8px;
+    border: 0px;
+    box-shadow: 0px 4px 10px rgba(22, 20, 20, 0.4);
+
+}
+
+#middle #contact #send {
+    text-align: center;
+    width: 150px;
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: 8px;
+    border: 0px;
+    box-shadow: 0px 4px 10px rgba(22, 20, 20, 0.4);
+
+}
+
+#middle #info {
+    width: 300px;
+    /* border: 1px solid black; */
+    /* background-color: lightseagreen; */
+    padding: 5px;
+    box-shadow: 0px 4px 20px rgba(22, 20, 20, 0.4);
+
+}
+
+#middle #info #work #lakGel {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+#middle #info #work #lakGel .pictures {
+    width: 90px;
+    height: 90px;
+    margin: 5px 0px;
+}
+#middle #info #work .microPictures {
+    width: 90px;
+    height: 90px;
+    margin: 5px 0px;
+}
+
+#bottom {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#bottom #buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    gap: 30px;
+    margin: 5px 0px;
+}
+
+#bottom #buttons .icons {
+    width: 50px;
+    height: 50px;
+    background-size: 100%;
+    
+}
+
+#bottom #buttons #call {
+    background-image: url(pics/icons/callme.png);
+}
+
+#bottom #buttons #whatsapp {
+    background-image: url(pics/icons/whatsapp.png);
+}
+
+#bottom #buttons #email {
+    background-image: url(pics/icons/gmail.png);
+}
+
+#bottom #buttons #waze {
+    background-image: url(pics/icons/waze.png);
+}
+
+#bottom #buttons #facebook {
+    background-image: url(pics/icons/facebook.png);
+}
+
+#bottom #buttons #instagram {
+    background-image: url(pics/icons/instagram.png);
+}
+
+
+#cRights {
+    direction: ltr;
+    text-align: center;
+}
+
+#cRights #etaiPhone {
+    text-decoration: underline;
+    color: blue;
+}
+
+.active {
+    display: none;
+}
+
+#option1, #option2{
+    box-shadow: 0px 4px 20px rgba(22, 20, 20, 0.4);
+
+}
+
+.zoomable {
+    transition: transform 0.2s; /* Animation effect for zooming */
+    cursor: pointer; /* Show pointer on hover */
+    max-width: 100px; /* Set a max width for the images */
+    margin: 10px; /* Space between images */
+}
+
+.zoomable.zoomed {
+    position: fixed; /* Fix position for centering */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%) scale(4); /* Center the image and scale */
+    z-index: 10; /* Bring the zoomed image above others */
+    max-height: 350px; /* Limit height to 350px */
+    max-width: none; /* Remove max-width restriction during zoom */
+}
+
+#aboutSection{
+    padding: 10px;
+}
