@@ -112,7 +112,7 @@ body {
 }
 #middle #info #work .microPictures {
     width: 90px;
-    height: 90px;
+    /* height: 90px; */
     margin: 5px 0px;
 }
 
